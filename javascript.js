@@ -15,7 +15,7 @@ Ser.addEventListener('click', function() {
   var search = document.getElementById("inp").value;
   console.log(search);
 
-  //Алгоритм посика по значенею
+    //Алгоритм посика по значенею
     var seccuss = '';
     var serch = new RegExp(search, );
     console.log(serch);
@@ -34,11 +34,8 @@ Ser.addEventListener('click', function() {
       txt.innerHTML = seccuss;
       txt.value = seccuss;
       console.log('txt.value '+txt.value);
-});
 
-// А здесь функция копирования, которая опять не работает :с
-var btn = document.getElementById('copyInfo');
-btn.addEventListener('click', function () {
+      // А здесь функция копирования
       var buff = document.querySelector('#textAr');
                     console.log(buff.value);
       var range = document.createRange();
@@ -48,9 +45,9 @@ btn.addEventListener('click', function () {
         try {
           document.execCommand('copy');
           console.log('Complete copy!');
-        }
-        catch {
-          console.log('Not range');
-        }
+       }
+       catch {
+         console.log('Not range');
+       }
         window.getSelection().removeAllRanges();
-    });
+});
