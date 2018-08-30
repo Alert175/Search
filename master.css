@@ -61,7 +61,7 @@ body{
   font-family: 'Montserrat Alternates', sans-serif;
   background: #d9f4ff;
   border-radius: 20px;
-  width: 100%;
+  width: 99%;
 }
 .loader{
   grid-area: loader;
